@@ -1,11 +1,11 @@
-"use client";
-import { avatar } from "@Images/index";
-import { FC, useState } from "react";
-import Card from "./Card";
-import { Tab } from "@headlessui/react";
-import classNames from "classnames";
-import Image from "next/image";
-import { motion as m } from "framer-motion";
+"use client"
+import { avatar, avatar1, avatar2 } from "@Images/index"
+import { FC, useState } from "react"
+import Card from "./Card"
+import { Tab } from "@headlessui/react"
+import classNames from "classnames"
+import Image from "next/image"
+import { motion as m } from "framer-motion"
 interface reviewProps {}
 
 const review: FC<reviewProps> = ({}) => {
@@ -20,7 +20,7 @@ const review: FC<reviewProps> = ({}) => {
     {
       id: "2",
       name: "  Ali Bravo",
-      avatar: avatar,
+      avatar: avatar1,
       select: false,
       text: " “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.” ",
     },
@@ -34,12 +34,12 @@ const review: FC<reviewProps> = ({}) => {
     {
       id: "4",
       name: "  Shanai Gough ",
-      avatar: avatar,
+      avatar: avatar2,
       select: false,
       text: "  “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”",
     },
-  ];
-  const [selected, setSelected] = useState(list);
+  ]
+  const [selected, setSelected] = useState(list)
 
   return (
     <div className="flex flex-col items-center ">
@@ -86,7 +86,7 @@ const review: FC<reviewProps> = ({}) => {
         Get Started
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default review;
+export default review
